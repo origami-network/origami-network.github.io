@@ -1,0 +1,11 @@
+image: Ubuntu
+skip_tags: true
+
+install:
+- npm install
+
+artifacts:
+- path: public
+
+before_deploy:
+- npm run deploy
