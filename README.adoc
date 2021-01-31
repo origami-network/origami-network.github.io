@@ -14,6 +14,8 @@ image::https://ci.appveyor.com/api/projects/status/stlymf6am469v1yd?svg=true[lat
 
 // TODO: describe purpose
 
+See tha page at https://origami.network.
+
 == License
 
 The work in this repository as well as its outcome is licensed under link:./LICENSE[CC BY-NC-ND 4.0].
