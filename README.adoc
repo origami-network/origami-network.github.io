@@ -9,7 +9,7 @@
 |
 image::https://ci.appveyor.com/api/projects/status/stlymf6am469v1yd/branch/master?svg=true[master build, link="https://ci.appveyor.com/project/BartDubois/origami-network-github-io/branch/master"]
 | 
-image::https://ci.appveyor.com/api/projects/status/stlymf6am469v1yd?svg=true[latest build, link="https://ci.appveyor.com/project/BartDubois/origami-network-github-io)"]
+image::https://ci.appveyor.com/api/projects/status/stlymf6am469v1yd?svg=true[latest build, link="https://ci.appveyor.com/project/BartDubois/origami-network-github-io"]
 |===
 
 // TODO: describe purpose
