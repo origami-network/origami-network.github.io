@@ -12,15 +12,18 @@ build_script:
 artifacts:
 - path: public
 
-before_deploy:
-- |
-  git config --global user.email "dubcio@o2.pl"
-  git config --global user.name "AppVeyor CI/CD"
-  git config --global credential.helper store
-  echo "https://$GITHUB_TOKEN:x-oauth-basic@github.com" >> ~/.git-credentials
-- |
-  npm run deploy
+for:
+- branches:
+  only:
+    - master
 
-deploy_script:
-- |
-  echo "TODO: figure out when it is executed"
+  before_deploy:
+  - |
+    git config --global user.email "dubcio@o2.pl"
+    git config --global user.name "AppVeyor CI/CD"
+    git config --global credential.helper store
+    echo "https://$GITHUB_TOKEN:x-oauth-basic@github.com" >> ~/.git-credentials
+
+  deploy_script:
+  - |
+    npm run deploy
