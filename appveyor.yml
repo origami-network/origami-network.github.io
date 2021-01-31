@@ -2,7 +2,8 @@ image: Ubuntu
 skip_tags: true
 
 install:
-- npm install
+- |
+  npm install
 
 build_script:
 - |
@@ -12,7 +13,13 @@ artifacts:
 - path: public
 
 before_deploy:
-- npm run deploy
+- |
+  git config --global user.email "dubcio@o2.pl"
+  git config --global user.name "AppVeyor CI/CD"
+  git config --global credential.helper store
+  echo "https://$GITHUB_TOKEN:x-oauth-basic@github.com" >> ~/.git-credentials
+- |
+  npm run deploy
 
 deploy_script:
 - |
