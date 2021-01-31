@@ -14,15 +14,15 @@ artifacts:
 
 for:
 - branches:
-  only:
-    - master
+    only:
+      - master
 
   before_deploy:
-  - |
-    git config --global user.email "dubcio@o2.pl"
-    git config --global user.name "AppVeyor CI/CD"
-    git config --global credential.helper store
-    echo "https://$GITHUB_TOKEN:x-oauth-basic@github.com" >> ~/.git-credentials
+    - |
+      git config --global user.email "dubcio@o2.pl"
+      git config --global user.name "AppVeyor CI/CD"
+      git config --global credential.helper store
+      echo "https://$GITHUB_TOKEN:x-oauth-basic@github.com" >> ~/.git-credentials
 
   deploy_script:
   - |
