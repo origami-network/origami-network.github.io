@@ -13,3 +13,7 @@ artifacts:
 
 before_deploy:
 - npm run deploy
+
+deploy_script:
+- |
+  echo "TODO: figure out when it is executed"
