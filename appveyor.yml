@@ -1,4 +1,8 @@
 image: Ubuntu
+
+branches:
+  except:
+    - gh-pages
 skip_tags: true
 
 init:
