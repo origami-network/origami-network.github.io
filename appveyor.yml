@@ -7,7 +7,7 @@ install:
 
 build_script:
 - |
-  echo "TODO: define build script"
+  npm run build
 
 artifacts:
 - path: public
