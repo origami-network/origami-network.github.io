@@ -3,6 +3,8 @@ skip_tags: true
 
 install:
 - |
+  node --version
+  npm --version
   npm install
 
 build_script:
