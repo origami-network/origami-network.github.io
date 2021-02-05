@@ -1,10 +1,14 @@
 image: Ubuntu
 skip_tags: true
 
-install:
+init:
 - |
+  nvm use 14.15.0
   node --version
   npm --version
+
+install:
+- |
   npm install
 
 build_script:
