@@ -5,6 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+
     "deploy": "gh-pages -d public"
   },
   "repository": {
@@ -17,6 +24,11 @@
     "url": "https://github.com/origami-network/origami-network.github.io/issues"
   },
   "homepage": "https://origami.network",
+  "dependencies": {
+    "gatsby": "^2.31.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
   "devDependencies": {
     "gh-pages": "^3.1.0"
   }
