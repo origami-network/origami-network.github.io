@@ -16,6 +16,8 @@
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    sodipodi:docname="logo.svg">
+  <title
+     id="title4699">origami.network logo</title>
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -26,11 +28,11 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="-17.954204"
-     inkscape:cy="126.37898"
+     inkscape:cx="49.883903"
+     inkscape:cy="130.70841"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
-     showgrid="true"
+     inkscape:current-layer="shape-layer"
+     showgrid="false"
      units="px"
      showguides="true"
      inkscape:guide-bbox="true"
@@ -52,21 +54,79 @@
        position="20,20.000001"
        orientation="1,0"
        id="guide12"
-       inkscape:locked="false" />
+       inkscape:locked="false"
+       inkscape:label="left"
+       inkscape:color="rgb(0,0,255)" />
     <sodipodi:guide
-       position="20,20.000001"
+       position="20,20"
        orientation="0,1"
        id="guide14"
-       inkscape:locked="false" />
+       inkscape:locked="false"
+       inkscape:label="bottom"
+       inkscape:color="rgb(0,0,255)" />
     <sodipodi:guide
-       position="300,300.00001"
+       position="300,300"
        orientation="0,1"
        id="guide16"
-       inkscape:locked="false" />
+       inkscape:locked="false"
+       inkscape:label="top"
+       inkscape:color="rgb(0,0,255)" />
     <sodipodi:guide
        position="300,300.00001"
        orientation="1,0"
        id="guide18"
+       inkscape:locked="false"
+       inkscape:label="right"
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="79.999992,40.000001"
+       orientation="1,0"
+       id="guide43"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="180,20.000001"
+       orientation="1,0"
+       id="guide45"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="80.000001,119.99999"
+       orientation="0,1"
+       id="guide47"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="20,180.00001"
+       orientation="0,1"
+       id="guide49"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="79.999992,120"
+       orientation="-0.70710678,0.70710678"
+       id="guide51"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="79.999992,120"
+       orientation="0.70710678,0.70710678"
+       id="guide55"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="120,80.000009"
+       orientation="-0.70710678,0.70710678"
+       id="guide57"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="260,260.00001"
+       orientation="0.70710678,0.70710678"
+       id="guide61"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="100,60.000002"
+       orientation="0.70710678,0.70710678"
+       id="guide63"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="100,140.00001"
+       orientation="0.70710678,0.70710678"
+       id="guide65"
        inkscape:locked="false" />
   </sodipodi:namedview>
   <metadata
@@ -77,13 +137,41 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title>origami.network logo</dc:title>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-nc-nd/4.0/" />
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Bart Dubois</dc:title>
+          </cc:Agent>
+        </dc:creator>
       </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:prohibits
+           rdf:resource="http://creativecommons.org/ns#CommercialUse" />
+      </cc:License>
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Layer 1"
+     inkscape:label="shape"
      inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(0,-802.51965)" />
+     id="shape-layer"
+     transform="translate(0,-802.51965)"
+     sodipodi:insensitive="true">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 99.99999,1062.5197 -20,20 L 80,1002.5196 19.999989,942.51965 300,822.51964 180,1102.5197 l -60,-60.0001 140,-179.99995 -159.99999,120"
+       id="basic-shape"
+       inkscape:connector-curvature="0"
+       inkscape:label="basic-shape" />
+  </g>
 </svg>
