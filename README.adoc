@@ -1,5 +1,7 @@
 = Web Page origami.network
 
+image:./src/images/logo.svg[origami.network logo, width=50%]
+
 .Build statuses
 [%autowidth, cols="^a,^a", options="header",]
 |===
