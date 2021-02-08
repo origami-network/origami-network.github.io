@@ -16,7 +16,7 @@ export default ({ data }) => {
       <h2>Second success</h2>
       <p>
         The page is generated using <a href="https://www.gatsbyjs.com/">gatsby.js</a>!.
-        It has also <Link to="/something-that-do-not-exists">404 status page</Link>.
+        It has also <Link to="/404">404 status page</Link>.
       </p>
 
       <h2>Third success</h2>
