@@ -20,8 +20,11 @@ export default ({ data }) => {
       </p>
 
       <h2>Third success</h2>
-      <p>The page has logo.</p>
+      <p>The page has logo and quote.</p>
       <img src={data.logo.src} alt="origami.network logo" />
+      <blockquote>
+        origami.network - the art of software folding
+      </blockquote>
     </main>
   )
 }
