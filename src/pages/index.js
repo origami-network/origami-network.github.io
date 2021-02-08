@@ -1,7 +1,8 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import { graphql } from "gatsby"
 
-export default () => {
+export default ({ data }) => {
   return (
     <main>
       <title>origami.network</title>
@@ -17,6 +18,17 @@ export default () => {
         The page is generated using <a href="https://www.gatsbyjs.com/">gatsby.js</a>!.
         It has also <Link to="/something-that-do-not-exists">404 status page</Link>.
       </p>
+
+      <h2>Third success</h2>
+      <p>The page has logo.</p>
+      <img src={data.logo.src} alt="origami.network logo" />
     </main>
   )
 }
+
+export const query = graphql`
+  query {
+    logo: file(relativePath: { eq: "logo.svg" }) {
+      src: publicURL
+    }
+  }`
