@@ -360,13 +360,14 @@
        id="path62"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:#000000;stroke:none;stroke-width:1px;stroke-linecap:square;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
-       d="M 16.464465,136.46446 296.11091,16.110918 300,25.500005 23.535535,143.53553 Z"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:square;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 18.056919,135.393 297.4131,15.146348 300,25.500005 23.535535,143.53553 Z"
        id="path72"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
     <path
-       style="fill:#000000;stroke:none;stroke-width:1px;stroke-linecap:square;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
-       d="M 294.5,20.000004 174.34315,294.34315 185.65685,305.65685 303.88909,23.889091 Z"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:square;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 294.5,20.000004 174.34315,294.34315 187.26442,303.35083 304.81395,22.660068 Z"
        id="path74"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
