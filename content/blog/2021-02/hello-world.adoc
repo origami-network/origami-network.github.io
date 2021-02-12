@@ -1,0 +1,8 @@
+= Hello World!
+Bart Dubois
+1, 2021-02-11: 
+
+:page-type: blog
+:page-category: general
+
+FIXME: Write why the page was created, what will be its content.
