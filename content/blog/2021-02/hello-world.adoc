@@ -6,3 +6,15 @@ Bart Dubois
 :page-category: general
 
 FIXME: Write why the page was created, what will be its content.
+
+== Section 1
+
+* item 1
+* item 2
+* item 3
+
+== Section 2
+
+. item 1
+. item 2
+. item 3
