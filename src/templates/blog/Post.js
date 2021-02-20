@@ -7,7 +7,7 @@ export default function Post({data}) {
     <>
       <nav>
         <ul>
-          <li><Link to="/">home page</Link></li>
+          <li><Link to="/"><img src={data.logo.src} alt="origami.network logo" width="100px" /></Link></li>
           <li><Link to="/blog/posts">blog posts</Link></li>
         </ul>
       </nav>
@@ -25,6 +25,9 @@ export default function Post({data}) {
 
 export const query = graphql`
   query($id: String!) {
+    logo: file(relativePath: { eq: "logo.svg" }) {
+      src: publicURL
+    }
     post: asciidoc(id: {eq: $id}) {
       html
       document {
