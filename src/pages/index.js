@@ -34,9 +34,9 @@ export default ({ data }) => {
       <ol>
         {data.blog.posts.map(post => (
           <li key={post.id}>
-            <Link to={post.fields.metadata.path}>
+            <Link to={post.fields.page.path}>
               <header>
-                {post.fields.metadata.date}
+                {new Date(post.revision.date).toDateString()}
                 <h3>{post.document.title}</h3>
                 {post.pageAttributes.category}
               </header>
@@ -56,15 +56,17 @@ export const query = graphql`
     logo: file(relativePath: { eq: "logo.svg" }) {
       src: publicURL
     }
-    blog: allAsciidoc(filter: {pageAttributes: {type: {eq: "blog"}}}, sort: {order: DESC, fields: fields___metadata___date}, limit: 5) {
+    blog: allAsciidoc(filter: {pageAttributes: {type: {eq: "blog"}}}, sort: {order: DESC, fields: revision___date}, limit: 5) {
       posts: nodes {
         id
         document {
           title
         }
+        revision {
+          date
+        }
         fields {
-          metadata {
-            date(formatString: "DD MMMM, YYYY")
+          page {
             path
           }
         }

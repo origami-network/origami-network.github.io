@@ -13,11 +13,11 @@ export default function Post({data}) {
       </nav>
       <main>
         <header>
-          {data.asciidoc.fields.metadata.date}
-          <h1>{data.asciidoc.document.title}</h1>
-          {data.asciidoc.pageAttributes.category}
+          {new Date(data.post.revision.date).toDateString()}
+          <h1>{data.post.document.title}</h1>
+          {data.post.pageAttributes.category}
         </header>
-        <div dangerouslySetInnerHTML={{ __html: data.asciidoc.html }} />
+        <div dangerouslySetInnerHTML={{ __html: data.post.html }} />
       </main>
     </>
   );
@@ -25,15 +25,13 @@ export default function Post({data}) {
 
 export const query = graphql`
   query($id: String!) {
-    asciidoc(id: {eq: $id}) {
+    post: asciidoc(id: {eq: $id}) {
       html
       document {
         title
       }
-      fields {
-        metadata {
-          date(formatString: "DD MMMM, YYYY")
-        }
+      revision {
+        date
       }
       pageAttributes {
         category

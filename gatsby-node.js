@@ -1,22 +1,21 @@
 // https://www.gatsbyjs.com/docs/tutorial/part-seven/
 
 const path = require('path');
+const slug = require('slug');
 const { createFilePath } = require('gatsby-source-filesystem');
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   if (node.internal.type === "Asciidoc") {
-    console.log(node)
-    console.log(getNode(node.parent))
-    console.log(createFilePath({ node, getNode, basePath: `pages` }));
-
     actions.createNodeField({
       node,
-      name: "metadata",
+      name: "page",
       value: {
-        path: "type/date/slug",
-        slug: "slug",
-        date: new Date()
-      }
+          path: path.join(
+            node.pageAttributes.type,
+            node.revision.date,
+            slug(node.document.title)
+          )
+        }
     });
   }
 };
@@ -30,7 +29,7 @@ exports.createPages = async ({ graphql, actions }) => {
           node {
             id
             fields {
-              metadata {
+              page {
                 path
               }
             }
@@ -42,7 +41,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   result.data.allAsciidoc.edges.forEach(({node}) => {
     actions.createPage({
-      path: node.fields.metadata.path,
+      path: node.fields.page.path,
       component,
       context: {
         id: node.id
