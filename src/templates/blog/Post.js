@@ -8,7 +8,7 @@ export default function Post({data}) {
       <nav>
         <ul>
           <li><Link to="/">home page</Link></li>
-          <li><Link to="/blog">blog</Link></li>
+          <li><Link to="/blog/posts">blog posts</Link></li>
         </ul>
       </nav>
       <main>

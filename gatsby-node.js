@@ -2,15 +2,14 @@
 
 const path = require('path');
 const slug = require('slug');
-const { createFilePath } = require('gatsby-source-filesystem');
 
-exports.onCreateNode = ({ node, getNode, actions }) => {
+exports.onCreateNode = ({ node, actions }) => {
   if (node.internal.type === "Asciidoc") {
     actions.createNodeField({
       node,
       name: "page",
       value: {
-          path: path.join(
+          path: "/" + path.join(
             node.pageAttributes.type,
             node.revision.date,
             slug(node.document.title)
@@ -21,10 +20,13 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 };
 
 exports.createPages = async ({ graphql, actions }) => {
-  const component = path.resolve(`./src/templates/blog/Post.js`);
+  const post = path.resolve(`./src/templates/blog/Post.js`);
   const result = await graphql(`
     query {
-      allAsciidoc {
+      allAsciidoc(
+        sort: {fields: revision___date},
+        filter: {pageAttributes: {type: {eq: "blog"}}}
+      ) {
         edges {
           node {
             id
@@ -35,6 +37,7 @@ exports.createPages = async ({ graphql, actions }) => {
             }
           }
         }
+        totalCount
       }
     }
   `);
@@ -42,10 +45,26 @@ exports.createPages = async ({ graphql, actions }) => {
   result.data.allAsciidoc.edges.forEach(({node}) => {
     actions.createPage({
       path: node.fields.page.path,
-      component,
+      component: post,
       context: {
         id: node.id
       }
-    })  
+    })
   });
+
+  const posts = path.resolve(`./src/templates/blog/Posts.js`);
+  const size = 10;
+  const total = Math.ceil(result.data.allAsciidoc.totalCount / size);
+  Array.apply(null, new Array(total)).forEach((_, index) => {
+    actions.createPage({
+      path: index > 0 
+        ? path.join("blog", "posts", (index + 1).toString())
+        : path.join("blog", "posts"),
+      component: posts,
+      context: {
+        skip: index * size,
+        limit: size,
+      }
+    })
+  })
 };

@@ -45,7 +45,7 @@ export default ({ data }) => {
         ))}
       </ol>
       <p>
-        See all <Link to="/blog">blog posts</Link>.
+        See all <Link to="/blog/posts">blog posts</Link>.
       </p>
     </main>
   )
