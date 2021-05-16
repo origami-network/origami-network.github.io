@@ -25,6 +25,28 @@ export default ({ data }) => {
       <blockquote>
         origami.network - the art of software folding
       </blockquote>
+
+      <h2>Fourth success</h2>
+      <p>
+        There {data.blog.pageInfo.totalCount === 1 ? "is" : "are"} {data.blog.pageInfo.totalCount} blog post{data.blog.pageInfo.totalCount === 1 ? "" : "s"}.
+        See the latest.
+      </p>
+      <ol>
+        {data.blog.posts.map(post => (
+          <li key={post.id}>
+            <Link to={post.fields.page.path}>
+              <header>
+                {new Date(post.revision.date).toDateString()}
+                <h3>{post.document.title}</h3>
+                {post.pageAttributes.category}
+              </header>
+            </Link>
+          </li>
+        ))}
+      </ol>
+      <p>
+        See all <Link to="/blog/posts">blog posts</Link>.
+      </p>
     </main>
   )
 }
@@ -33,5 +55,27 @@ export const query = graphql`
   query {
     logo: file(relativePath: { eq: "logo.svg" }) {
       src: publicURL
+    }
+    blog: allAsciidoc(filter: {pageAttributes: {type: {eq: "blog"}}}, sort: {order: DESC, fields: revision___date}, limit: 5) {
+      posts: nodes {
+        id
+        document {
+          title
+        }
+        revision {
+          date
+        }
+        fields {
+          page {
+            path
+          }
+        }
+        pageAttributes {
+          category
+        }
+      }
+      pageInfo {
+        totalCount
+      }
     }
   }`
