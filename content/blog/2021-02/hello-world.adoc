@@ -3,7 +3,7 @@
 
 = Hello World!
 Bart Dubois
-D1, 2021-02-11
+D2, 2021-05-16
 
 Welcome to *origami.network* first blog post.
 
@@ -31,8 +31,9 @@ You can see that the page is very raw now, I hope it will improve as part of the
 
 I'm still wondering how to create some feedback channels.
 Just in case you would like to say _Hello Bart_.
-As a starting point, I would like to use GitHub Discussion on this page repository.
+As a starting point, I would like to use https://github.com/origami-network/origami-network.github.io/discussions[GitHub Discussion on this site repository].
 In the end, this is the page about software and the discussion capability is the new thing on GitHub.
+Let's try it.
 
 Thank you and see you soon.
 
