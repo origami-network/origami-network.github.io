@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{w2l6:function(e,t,n){"use strict";n.r(t);var o=n("q1tI"),a=n("Wbzz");t.default=function(e){var t=e.data;return o.createElement("main",null,o.createElement("title",null,"404 - page not found"),o.createElement("img",{src:t.logo.src,alt:"origami.network logo"}),o.createElement("h1",null,"Page not found"),o.createElement("p",null,"Sorry, the page is not know. Go to our ",o.createElement(a.a,{to:"/"},"home page"),"."))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-608899656d7d428f1132.js.map
