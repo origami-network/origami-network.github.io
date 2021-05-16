@@ -18,6 +18,9 @@ export default function Post({data}) {
           {data.post.pageAttributes.category}
         </header>
         <div dangerouslySetInnerHTML={{ __html: data.post.html }} />
+        <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode">
+          <img src="https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png" alt="Attribution-NonCommercial-NoDerivatives 4.0 International" />
+        </a>
       </main>
     </>
   );
