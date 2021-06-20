@@ -1,5 +1,6 @@
 :page-type: blog
 :page-category: general
+:page-license: CC BY-NC-ND 4.0
 
 = Hello World!
 Bart Dubois
