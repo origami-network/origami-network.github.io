@@ -3,16 +3,50 @@
 
 = UML diagrams
 Bart Dubois
-D1, 2021-06-20
+D2, 2021-06-20
+
+
+[source, plantuml]
+----
+include::uml-diagrams/example.puml[]
+----
+
+
+[source, asciidoc]
+----
+plantuml::uml-diagrams/example.puml[svg, id="include-diagram"]
+----
 
 .Include diagram
 plantuml::uml-diagrams/example.puml[svg, id="include-diagram"]
+
+[source, asciidoc]
+----
+[plantuml, inline-include-diagram, svg, id="inline-include-diagram"]     
+....
+\include::uml-diagrams/example.puml[]
+....
+----
 
 .Inline include diagram
 [plantuml, inline-include-diagram, svg, id="inline-include-diagram"]     
 ....
 include::uml-diagrams/example.puml[]
 ....
+
+[source, asciidoc]
+----
+[plantuml, inline-diagram, svg, id="inline-diagram"]     
+....
+@startuml
+
+class Foo {
+
+}
+
+@enduml
+....
+----
 
 .Inline diagram
 [plantuml, inline-diagram, svg, id="inline-diagram"]     
