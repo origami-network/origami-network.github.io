@@ -1,0 +1,28 @@
+:page-type: blog
+:page-category: specification
+
+= UML diagrams
+Bart Dubois
+D1, 2021-06-20
+
+.Include diagram
+plantuml::uml-diagrams/example.puml[svg]
+
+.Inline include diagram
+[plantuml, inline-include-diagram, svg]     
+....
+include::uml-diagrams/example.puml[]
+....
+
+.Inline diagram
+[plantuml, inline-diagram, svg]     
+....
+@startuml
+
+
+class Foo {
+
+}
+
+@enduml
+....
