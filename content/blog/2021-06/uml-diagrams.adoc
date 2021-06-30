@@ -6,19 +6,18 @@ Bart Dubois
 D1, 2021-06-20
 
 .Include diagram
-plantuml::uml-diagrams/example.puml[svg]
+plantuml::uml-diagrams/example.puml[svg, id="include-diagram"]
 
 .Inline include diagram
-[plantuml, inline-include-diagram, svg]     
+[plantuml, inline-include-diagram, svg, id="inline-include-diagram"]     
 ....
 include::uml-diagrams/example.puml[]
 ....
 
 .Inline diagram
-[plantuml, inline-diagram, svg]     
+[plantuml, inline-diagram, svg, id="inline-diagram"]     
 ....
 @startuml
-
 
 class Foo {
 
