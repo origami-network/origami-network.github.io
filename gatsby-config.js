@@ -1,3 +1,17 @@
+const kroki = require('asciidoctor-kroki')
+
+class CustomConverter {
+  constructor(asciidoc) {
+    kroki.register(asciidoc.Extensions)
+
+    this.baseConverter = asciidoc.Html5Converter.$new()
+  }
+
+  convert(node, transform) {
+    return this.baseConverter.convert(node, transform)
+  }
+}
+
 module.exports = {
   siteMetadata: {
     title: "origami.network",
@@ -22,6 +36,7 @@ module.exports = {
     {
       resolve: `gatsby-transformer-asciidoc`,
       options: {
+        converterFactory: CustomConverter,
         safe: 'unsafe'
       }
     }
