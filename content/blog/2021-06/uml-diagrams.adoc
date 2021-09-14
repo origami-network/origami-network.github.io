@@ -5,7 +5,7 @@
 Bart Dubois
 D2, 2021-06-20
 
-When speaking about making software it is hard to skip diagrams topic.
+When speaking about making software engineering it is hard to skip diagrams topic.
 
 "A picture is worth a thousand words."
 -- https://en.wikipedia.org/wiki/A_picture_is_worth_a_thousand_words[Wikipedia]
@@ -14,7 +14,6 @@ When speaking about making software it is hard to skip diagrams topic.
 ----
 include::uml-diagrams/example.puml[]
 ----
-
 
 [source, asciidoc]
 ----
