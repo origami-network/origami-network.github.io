@@ -1,10 +1,14 @@
 :page-type: blog
 :page-category: specification
 
-= UML diagrams
+=   
 Bart Dubois
 D2, 2021-06-20
 
+When speaking about making software it is hard to skip diagrams topic.
+
+"A picture is worth a thousand words."
+-- https://en.wikipedia.org/wiki/A_picture_is_worth_a_thousand_words[Wikipedia]
 
 [source, plantuml]
 ----
