@@ -5,10 +5,41 @@
 Bart Dubois
 D2, 2021-06-20
 
-When speaking about making software engineering it is hard to skip diagrams topic.
+When speaking about software engineering it is hard to skip diagrams topic.
 
 "A picture is worth a thousand words."
 -- https://en.wikipedia.org/wiki/A_picture_is_worth_a_thousand_words[Wikipedia]
+
+But there is no consensus about this in our industry.
+The developers group dislikes making diagrams while they stand on the code side.
+On the other hand architects likes precise diagrams that shows relation between different parts of the solution.
+Operations which use live diagrams to see current statuses and communication flows.
+And of course business or stakeholders for whom the analytics prepare propositions or problem solution so they will know for what the moneys ware spent.
+
+Each of those groups use different visual language.
+During translations lost of information is lost or the meaning is changed.
+
+There was a time that the https://www.uml.org/[UML] takes the industry by storm.
+It promisees to provide unified language to exchange information about the software in visual form.
+There was even lost of rumor about code generation from UML as well as ding the same in opposite direction.
+
+In my opinion all this efforts failed.
+But it does not mean that the diagrams are not usefully.
+
+Personally I like UML and its variations as much as code.
+It is one of the tool in my toolkit.
+Just like scripting or general purpose languages are have they strengths and weakness.
+
+While I will describe in my blog lots of generic concepts, I will use diagrams to visualize them.
+In order to be closer to the consensus I will use https://plantuml.com/[PlantUML] tool while it joins the both worlds of code and diagrams quite well.
+Even tho there is lost of other diagram generation tools I think PlantUML has reacher set of diagrams types as well as other capabilities that make the working with it similar to coding.
+
+There is also other reason I make this post.
+I will use it as living specification how to embed diagrams into article.
+Maybe in the feature I will use it for visual regression of my blog theme.
+For now it will be my personal cheat-sheet.
+
+== Specification
 
 [source, plantuml]
 ----
